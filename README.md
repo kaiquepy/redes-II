@@ -1,7 +1,7 @@
 Trabalho 2 de Redes de Computadores II
 ======================================
 
-Implementações em Python 3.10+ que cobrem os quatro primeiros exercícios do
+Implementações em Python 3.10+ que cobrem os exercícios práticos do
 trabalho proposto pelo Prof. Alessandro Vivas Andrade. Cada exercício está
 organizado em seu próprio diretório com subpastas `server/` e `client/` e contém scripts bem comentados, seguindo os requisitos descritos no
 PDF encontrado em `docs/`.
@@ -21,11 +21,15 @@ PDF encontrado em `docs/`.
 - **ex04/**: Servidor de hora multithread. Cada cliente recebe a hora atual no
   formato `HH:MM:SS`, com logs (`logging`) registrando conexões e respostas. O
   cliente solicita a hora e imprime a resposta.
+- **ex10/**: Chat em grupo via WebSockets. O servidor assíncrono aceita múltiplos
+  clientes, valida mensagens e transmite para todos os participantes. O cliente
+  usa asyncio para enviar e receber simultaneamente e encerra ao digitar `sair`.
 
 ## Pré-requisitos
 
 - Python 3.10 ou superior.
 - Sistema operacional Linux (testado no Ubuntu 22.04).
+- Dependências listadas em `requirements.txt` (instale com `pip install -r requirements.txt`).
 
 Opcionalmente recomenda-se criar um ambiente virtual:
 
